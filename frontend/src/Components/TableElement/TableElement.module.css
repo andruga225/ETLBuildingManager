@@ -1,0 +1,72 @@
+.generalDiv {
+    background-color: cornsilk;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-columns: 1fr 0.25fr;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0;
+    margin-top: 10px;
+}
+
+.tableDataDiv {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tableInfDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.tableAttrData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    overflow: scroll;
+}
+
+.ul {
+    height: 100px;
+    overflow: scroll;
+    text-align: left;
+    scroll-margin-left: 5px;
+}
+
+.li {
+    display: block;
+    padding: 3px;
+    margin: 0px 15px 0px 10px;
+}
+
+.h1 {
+    font-size: 20px;
+}
+
+.btnDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn {
+    background: rgb(255, 207, 156);
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.btn:hover{
+    background-color: burlywood;
+}

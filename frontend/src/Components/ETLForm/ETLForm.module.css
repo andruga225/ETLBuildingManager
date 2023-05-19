@@ -1,0 +1,102 @@
+.generalDiv {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 160px;
+}
+
+.nameTableDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.radioBtnDiv {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btnDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.chooseTableDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tableDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.fieldsDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    overflow: scroll;
+    scroll-margin-left: 5px;
+
+}
+
+.input {
+    outline: none;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.label {
+    color: black;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn {
+    background: rgb(255, 207, 156);
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    background-color: burlywood;
+}
+
+.rbt:checked {
+    accent-color: rgb(255, 207, 156);
+}
+
+.slt {
+    background: rgb(255, 207, 156);
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: 0px 1px 2px 0px;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    width: 240px;
+    margin-top: 5px;
+}

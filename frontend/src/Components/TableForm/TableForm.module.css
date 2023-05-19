@@ -1,0 +1,63 @@
+.generalDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 500px;
+    width: 450px;
+}
+
+.form {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 75px;
+}
+
+.nameTableDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.submitDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldsDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 310px;
+    overflow: scroll;
+    scroll-margin-left: 5px;
+}
+
+.input {
+    outline: none;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.label {
+    color: black;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn {
+    background: rgb(255, 207, 156);
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    background-color: burlywood;
+}

@@ -1,0 +1,39 @@
+.generalDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+}
+
+.slt {
+    background: rgb(255, 207, 156);
+    color: black;
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    font-size: 14px;
+    box-shadow: 0px 1px 2px 0px;
+    text-align: center;
+    width: 200px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.slt:hover {
+    background-color: burlywood;
+}
+
+.input {
+    outline: none;
+    margin: 5px;
+    padding: 3px;
+    height: 17px;
+    box-shadow: 0px 1px 2px 0px;
+    font-size: 14px;
+    width: 200px;
+}
+
+option {
+    text-align: center;
+}

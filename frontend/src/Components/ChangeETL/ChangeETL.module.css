@@ -1,0 +1,41 @@
+.generalDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 130px;
+    width: 400px;
+}
+
+.fieldsDiv {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 90px;
+}
+
+.input {
+    outline: none;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.label {
+    color: black;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn {
+    background: rgb(255, 207, 156);
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    background-color: burlywood;
+}

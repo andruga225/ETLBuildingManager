@@ -1,0 +1,28 @@
+.navigationBar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    margin: -8px -8px 0px -8px;
+    background: rgb(255, 207, 156);
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navBarElem {
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navBarElem:hover {
+    background-color: burlywood;
+}

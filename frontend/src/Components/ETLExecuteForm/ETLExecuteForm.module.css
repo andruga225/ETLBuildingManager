@@ -1,0 +1,64 @@
+.generalDiv {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 300px;
+}
+
+.chbDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.chbElemDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.btnDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    outline: none;
+    margin-top: 5px;
+    padding: 10px;
+    max-height: 300px;
+}
+
+.checkBox {
+    accent-color: rgb(255, 207, 156);
+}
+
+.label {
+    color: black;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn {
+    background: rgb(255, 207, 156);
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    background-color: burlywood;
+}
