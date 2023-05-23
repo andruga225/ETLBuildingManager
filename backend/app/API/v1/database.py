@@ -84,7 +84,8 @@ def get_table_fields(name: str):
                 } for attr in table.attribute_list
             ]
 
-@db_router.post("/database/table/")
+
+@db_router.post("/database/table")
 def post_table(name: str, attributes: list[str] = Query(), types: list[str] = Query()):
     DbTable.DbTable(name, db_model, [Attribute(attributes[i], name, types[i]) for i in range(len(attributes))])
     db_model.load_tables()

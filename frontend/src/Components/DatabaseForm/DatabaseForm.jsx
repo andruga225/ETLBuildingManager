@@ -64,9 +64,9 @@ const DatabaseForm = ({sentRequest}) =>
         <div className={cl.generalDiv}>
             <form className={cl.form}  onSubmit={handleSubmit(addDatabase)}>
                 <div className={cl.fieldsDiv}>
-                    <label className={cl.label}>Name</label>
+                    <label className={cl.label}>Название базы данных</label>
                     <input className={cl.input}
-                           placeholder={"Name"}
+                           placeholder={"Введите название базы данных"}
                            {...register("name")}/>
                 </div>
                 <input className={cl.btn} type={"submit"} value={"Создать"}/>

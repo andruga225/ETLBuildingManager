@@ -1,7 +1,4 @@
-import regex as regex
-
 from app.Model.Enums import DataType
-from app.common import db
 
 
 class Attribute:

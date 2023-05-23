@@ -41,7 +41,7 @@ const DataPage = () => {
         {
             setCurrentTable(res[0].name)
             await Service.putCurrentTable(res[0].name)
-            fetchTableFields(res[0].name)
+            await fetchTableFields(res[0].name)
             fetchData()
         }
 
@@ -62,6 +62,7 @@ const DataPage = () => {
         const curTable = (await response).data
         if(curTable != null) {
             setCurrentTable(curTable)
+            await fetchTableFields(curTable)
             fetchData()
         }
     }

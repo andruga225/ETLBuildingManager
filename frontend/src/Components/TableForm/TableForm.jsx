@@ -51,7 +51,7 @@ const TableForm = ({existingTables, sentRequest}) => {
         const data = {
             name: tableName,
             attributes: [...fieldList.map(field => field.value)],
-            types: [...fieldTypeList.map((field, i) => encodedFieldTypes[i])]
+            types: [...fieldTypeList.map((field) => encodedFieldTypes[allFieldTypes.findIndex(type => type == field)])]
         }
         console.log(data)
         try {
@@ -73,7 +73,7 @@ const TableForm = ({existingTables, sentRequest}) => {
             setTableName("")
             const maxId = Math.max(...fieldList.map(field => field.id))
             setFieldList([{id: maxId + 1, value: ''}])
-            setFieldTypeList([...'Целое число'])
+            setFieldTypeList(['Целое число'])
             sentRequest()
 
         } catch (err) {

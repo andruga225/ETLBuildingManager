@@ -19,7 +19,7 @@ class ETL:
     request_param_list = []
 
     def __init__(self, id, name, db_name, table_name, source_type, source_attr_list, table_attr_list, url,
-                 param_list=[]):
+                 param_list=None):
         self.id = id
         self.name = name
         self.db_name = db_name
@@ -28,7 +28,10 @@ class ETL:
         self.source_attr_list = source_attr_list
         self.table_attr_list = table_attr_list
         self.url = url
-        self.request_param_list = param_list
+        if param_list is None:
+            self.get_url_params()
+        else:
+            self.request_param_list = param_list
 
     def __eq__(self, other):
         return self.id == other.id
@@ -112,3 +115,7 @@ class ETL:
             result_list.append(url_param_list[i])
         result_dict = {result_list[i]: result_list[i + 1] for i in range(0, len(result_list), 2)}
         return '&'.join([f"{k}={v}" for k, v in result_dict.items()])
+
+
+result = urlparse('http://www.cbr.ru/scripts/XML_daily.asp?date_req=02/03/2002')
+print(list(parse_qs(result.query).keys()))

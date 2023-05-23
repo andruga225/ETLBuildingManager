@@ -1,4 +1,5 @@
 import psycopg2.sql
+import regex
 
 
 class QueryBuilder:
@@ -84,7 +85,10 @@ class QueryBuilder:
     def execute_insert_query(self, attributes, values, table_name=None):
         cursor = self.db_model.db.conn.cursor()
         params = ""
-        for val in values:
+        re_float = regex.compile(r'^[+-]?[0-9]+\,[0-9]+$')
+        for i in range(len(values)):
+            if regex.search(re_float, values[i]):
+                values[i] = values[i].replace(",", ".")
             params += "%s, "
         params = params[:-2]
         sql = f"INSERT INTO {self.db_table.name if table_name is None else table_name} ({','.join(attributes)}) VALUES ({params})"
