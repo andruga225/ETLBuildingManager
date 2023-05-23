@@ -8,7 +8,7 @@ from pathlib import Path
 from app import create_app
 
 config = configparser.ConfigParser()
-config.read(str(Path(__file__).parent) + r"\app\config.ini")
+config.read(str(Path(__file__).parent) + r"/app/config.ini")
 
 
 if __name__ == '__main__':

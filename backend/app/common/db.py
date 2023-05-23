@@ -4,7 +4,7 @@ import configparser
 from pathlib import Path
 
 config = configparser.ConfigParser()
-config.read(str(Path(__file__).parent.parent) + "\config.ini")
+config.read(str(Path(__file__).parent.parent) + "/config.ini")
 
 
 class Database:
